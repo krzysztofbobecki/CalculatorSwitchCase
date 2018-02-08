@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Test1 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Witaj w kalkulatorze! \n\n\n");
+        System.out.println("Wprowadź liczbe a: ");
+        int liczbaA = sc.nextInt();
+        System.out.println("Wprowadź liczbe b: ");
+        int liczbaB = sc.nextInt();
+        System.out.println("Wybierz opcje: ");
+        System.out.println("1. Dodawanie ");
+        System.out.println("2. Odejmowanie ");
+        System.out.println("3. Mnożenie ");
+        System.out.println("4. Dzielenie ");
+
+
+        int metoda= 0;
+        int wynik = 0;
+        int wybor = sc.nextInt();
+
+        switch (wybor){
+            case 1:
+                wynik = (liczbaA+liczbaB);
+                break;
+            case 2:
+                wynik = (liczbaA-liczbaB);
+                break;
+            case 3:
+
+                wynik = (liczbaA*liczbaB);
+                break;
+            case 4:
+                wynik = (liczbaA/liczbaB);
+                break;
+            default:
+                String zlyWybor = "niepoprawde dane";
+                break;
+
+        }
+        System.out.println("Wynik= "+wynik);
+    }
+}
